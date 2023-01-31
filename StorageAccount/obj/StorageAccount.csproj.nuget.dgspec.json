@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj": {}
+    "c:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj": {
+    "c:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj",
+        "projectUniqueName": "c:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj",
         "projectName": "StorageAccount",
-        "projectPath": "C:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj",
+        "projectPath": "c:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\StorageAccount.csproj",
         "packagesPath": "C:\\Users\\vmadmin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\obj\\",
+        "outputPath": "c:\\Users\\vmadmin\\Desktop\\DemoStorageAccount\\StorageAccount\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vmadmin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Azure.Data.Tables": {
+              "target": "Package",
+              "version": "[12.7.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.14.1, )"
+            },
+            "Azure.Storage.Common": {
+              "target": "Package",
+              "version": "[12.13.0, )"
+            },
+            "Azure.Storage.Files.Shares": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.12.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
