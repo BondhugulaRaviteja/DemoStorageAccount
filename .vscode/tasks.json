@@ -36,66 +36,6 @@
                 "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
             ],
             "problemMatcher": "$msCompile"
-        },
-        {
-            "type": "docker-build",
-            "label": "docker-build: debug",
-            "dependsOn": [
-                "build"
-            ],
-            "dockerBuild": {
-                "tag": "demostorageaccount:dev",
-                "target": "base",
-                "dockerfile": "${workspaceFolder}/StorageAccount/Dockerfile",
-                "context": "${workspaceFolder}",
-                "pull": true
-            },
-            "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
-            }
-        },
-        {
-            "type": "docker-build",
-            "label": "docker-build: release",
-            "dependsOn": [
-                "build"
-            ],
-            "dockerBuild": {
-                "tag": "demostorageaccount:latest",
-                "dockerfile": "${workspaceFolder}/StorageAccount/Dockerfile",
-                "context": "${workspaceFolder}",
-                "pull": true
-            },
-            "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
-            }
-        },
-        {
-            "type": "docker-run",
-            "label": "docker-run: debug",
-            "dependsOn": [
-                "docker-build: debug"
-            ],
-            "dockerRun": {
-                "os": "Windows"
-            },
-            "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj",
-                "enableDebugging": true
-            }
-        },
-        {
-            "type": "docker-run",
-            "label": "docker-run: release",
-            "dependsOn": [
-                "docker-build: release"
-            ],
-            "dockerRun": {
-                "os": "Windows"
-            },
-            "netCore": {
-                "appProject": "${workspaceFolder}/StorageAccount/StorageAccount.csproj"
-            }
         }
     ]
 }
